@@ -58,7 +58,7 @@
     <button type="button" onclick="addToDisplay('4')">4</button>
     <button type="button" onclick="addToDisplay('5')">5</button>
     <button type="button" onclick="addToDisplay('6')">6</button>
-    <button type="button" onclick="addToDisplay('x')">*</button><br>
+    <button type="button" onclick="addToDisplay('*')">*</button><br>
 
     <button type="button" onclick="addToDisplay('1')">1</button>
     <button type="button" onclick="addToDisplay('2')">2</button>
