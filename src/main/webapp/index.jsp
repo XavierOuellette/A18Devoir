@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1><%= "Bienvenue!" %></h1>
-<h3><%= "Pour basculer vers la calculatrice, cliquez sur le lien."%>></h3>
+<h3><%= "Pour basculer vers la calculatrice, cliquez sur le lien."%></h3>
 <br/>
 <a href="calculator">Calculatrice!</a>
 </body>
