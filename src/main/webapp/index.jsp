@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+  <title>Page d'accueil</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
+<h1><%= "Bienvenue!" %></h1>
+<h3><%= "Pour basculer vers la calculatrice, cliquez sur le lien."%>></h3>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="calculator">Calculatrice!</a>
 </body>
 </html>
