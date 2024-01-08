@@ -1,9 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>Calculatrice</title>
 
+    <!-- CDN pour MathJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.2.1/math.js" integrity="sha512-ekTDuSaAE9sFxbDUSIgOT0OK+iInxoziYIA03oVHFWC7edmuSwngpR/FTu7ome+sfcZgFePphvGDkRTav62lMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+
         function addToDisplay(value) {
             document.getElementById("display").value += value;
         }
@@ -12,11 +16,12 @@
             document.getElementById("display").value = "";
         }
 
-        function evaluate() {
+        function calculate() {
             const expression = document.getElementById("display").value;
-            const result = eval(expression);
+            const result = math.evaluate(expression);
 
             document.getElementById("display").value = result;
+
         }
     </script>
 
@@ -50,7 +55,7 @@
 
     <button type="button" onclick="addToDisplay('0')">0</button>
     <button type="button" onclick="addToDisplay('.')">.</button>
-    <button type="button" onclick="evaluate()">=</button>
+    <button type="button" onclick="calculate()">=</button>
     <button type="button" onclick="addToDisplay('+')">+</button><br>
 
 </form>
